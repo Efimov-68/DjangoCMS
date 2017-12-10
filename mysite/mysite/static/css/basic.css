@@ -1,0 +1,67 @@
+body {
+  /*background-image: url(../img/fon.jpg);*/
+
+}
+.intro_heading h1{
+  padding: 20px;
+  color: black;
+  text-align: center;
+}
+.intro_newblogs {
+  padding: 20px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  background-color: whitesmoke;
+}
+
+.header_heading h1 a{
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  color: darkcyan;
+}
+.header_heading span {
+  color: darkorange;
+}
+
+.nav {
+  padding-left: 20px;
+}
+.nav li {
+  display: ;
+  list-style-type: none;
+  padding: 5px;
+
+}
+.nav li a {
+  color: grey
+}
+.nav li a:hover{
+  text-decoration: none;
+}
+
+.intro_allcontent{
+  margin:0 auto;
+}
+
+.container {
+  margin-left:50%;
+  width: auto;
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+.content {
+  float: left;
+  width: 80%;
+}
+.sidebar {
+  float: left;
+  width: 20%;
+}
