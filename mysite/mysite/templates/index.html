@@ -4,10 +4,46 @@
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
 {% block content %}
-	<div class="intro_allcontent">
+	<div class="intro_content">
 		{% placeholder "heading" %}
-		{% placeholder "intro_newblogs" %}
-		{% placeholder "content" %}
-
+		<div class="newblogs">
+			<a href="{{ STATIC_URL }}pages/">
+				<div class="new_heading">
+					<h2>{%placeholder "new_heading"%}</h2>
+				</div>
+				<div class="newblogs_text">{% placeholder "newblogs_text" %}</div>
+			</a>
+		</div>
+		<div class="content_i">
+			{% placeholder "content" %}
+		</div>
+		<div class="newblogs">
+			<a href="{{ STATIC_URL }}pages/">
+				<div class="new_heading">
+					<h2>{%placeholder "new_heading"%}</h2>
+				</div>
+				<div class="newblogs_text">{% placeholder "newblogs_text" %}</div>
+			</a>
+		</div>
+		<div class="content_i">
+			{% placeholder "content" %}
+		</div>
+		<div class="newblogs">
+			<a href="{{ STATIC_URL }}pages/">
+				<div class="new_heading">
+					<h2>{%placeholder "new_heading"%}</h2>
+				</div>
+				<div class="newblogs_text">{% placeholder "newblogs_text" %}</div>
+			</a>
+		</div>
+		<div class="content_i">
+			{% placeholder "content" %}
+		</div>
+	</div>
+	<div class="block_right">
+		<div class="news">
+			<h3>{%placeholder "news_head"%}</h3>
+			<p>{%placeholder "news"%}</p>
+		</div>
 	</div>
 {% endblock content %}
