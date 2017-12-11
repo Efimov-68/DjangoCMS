@@ -3,6 +3,7 @@ body {
   font-family: helvetica;
 }
 .intro_heading h1{
+  margin: 10px;
   padding: 20px;
   color: black;
   text-align: center;
@@ -16,7 +17,7 @@ header {
   top: 0;
   left: 0;
   bottom: 0;
-  width: auto;
+  width: 13%;
   background-color: whitesmoke;
 }
 
@@ -30,6 +31,42 @@ header {
   color: darkorange;
 }
 
+.nav_menu {
+  margin: auto;
+}
+
+.nav_info_serv{
+  position: absolute;
+  left: 0;
+  right: 10px;
+  bottom: 0;
+}
+.nav_info_serv ul{
+  line-height: 1em;
+  list-style-type: none;
+}
+.nav_info_serv li:nth-child(2),
+.nav_info_serv li:nth-child(3){
+  font-size: .8em;
+}
+.nav_info_serv li:nth-child(1){
+  color: black;
+  text-shadow: 1px 1px 1px gray;
+  margin-bottom: 10px; 
+}
+.nav_info_serv li:nth-child(2) a,
+.nav_info_serv li:nth-child(3) a{
+  color: gray;
+}
+.nav_info_serv li:nth-child(2) a:hover,
+.nav_info_serv li:nth-child(3) a:hover{
+  text-decoration: none;
+}
+.nav_info_serv li:nth-child(4) img{
+  margin-top: 10px;
+  width: 25px;
+}
+
 .nav {
   padding-left: 20px;
 }
@@ -40,32 +77,33 @@ header {
 
 }
 .nav li a {
-  color: grey
+  color: grey;
+  text-decoration: none;
 }
 .nav li a:hover{
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .intro_content{
-  margin:0 auto;
-  background-color: lightgreen; 
+  margin: 0 auto;
 }
 
 .newblogs{
   margin:10px;
-  border: 2px solid green;
-  border-radius:5px;
-  box-shadow: 0 3px 10px green;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-radius:2px;
 }
 .newblogs:hover{
-  box-shadow: 0 0 15px gray;
+  box-shadow: 0 0 5px whitesmoke;
+  background-color: ghostwhite;
 }
 .new_heading{
   padding:10px;
   color: black;
 }
 .newblogs_text{
-  background-color: pink;
+  background-color: ghostwhite;
 }
 .newblogs a{
   color: black;
@@ -78,8 +116,8 @@ header {
 
 .container {
   margin-top: 0;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 14%;
+  margin-right: auto;
   width: auto;
   max-width: 700px;
 }
@@ -89,12 +127,14 @@ header {
   max-width: 300px;
   padding: 10px;
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 50px;
   box-shadow: 0 2px 5px gray;
   background-color: lightblue;
 }
-
+.news {
+  border-bottom: 1px dashed gray;
+}
 
 .content {
   float: left;
