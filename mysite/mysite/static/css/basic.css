@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -86,11 +86,12 @@ header {
 
 .block_right{
   width: auto;
-  max-width: 200px;
+  max-width: 300px;
   padding: 10px;
   position: absolute;
   top: 10%;
   right: 50px;
+  box-shadow: 0 2px 5px gray;
   background-color: lightblue;
 }
 
