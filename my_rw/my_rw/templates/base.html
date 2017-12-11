@@ -1,0 +1,54 @@
+{% load cms_tags menu_tags sekizai_tags %}
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <title>{% block title %}This is my new project home page{% endblock title %}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css"/>
+  {% render_block "css" %}
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <div class="">
+    <header>
+      <div class="nav_info">
+        <ul>
+          <li>{% placeholder "tel" %}</li>
+          <!--li><a href="">{% placeholder "email_rw" %}</a></li>
+          <li><a href="">{% placeholder "email_rws" %}</a></li-->
+        </ul>
+      </div>
+      <div class="header_block">{% placeholder "header" %}</div>
+      <div class="sld_img">
+        <div class="sld_block">
+          <form method="get" >
+            <input type="submit" values="Отправить"/>
+            <input type="submit" values="Отправить"/>
+          </form>
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          {% show_menu 0 100 100 100 %}
+        </ul>
+      </div>
+    </header>
+  </div>
+  <div class="container">
+    {% block content %}{% endblock content %}
+  </div>
+    <footer>
+      <div class="footer_heading">
+        <h3>{% placeholder "footer_heading" %}</h3>
+      </div>
+    </footer>
+  <script></script>
+  {% render_block "js" %}
+</body>
+
+</html>
