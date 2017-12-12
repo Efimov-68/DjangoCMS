@@ -15,7 +15,7 @@
          <div class="sld_text">
            {% placeholder "sld_text" %}
          </div>
-          <form method="get" >
+          <form method="get" action="">
             <input type="submit" values="Отправить"/>
             <input type="submit" values="Отправить"/>
           </form>
@@ -27,6 +27,7 @@
   
   <div id="allcontent">
     <div class="introduction">
+      <!--INTRODUCTION ABOUT US BLOCK-->
       <div class="intro_block_about">
         <div class="intro_about_heading">
           {% placeholder "intro_about_heading" %}
@@ -40,32 +41,82 @@
           </div>
         </div>
       </div>
+      <!--INTRODUCTION ABOUT US BLOCK-->
+      <!--STRUCTURE LANGUAGE CODE SYSTEMS-->
+      <div class="structure_block">
+        <div class="structure_block_heading">
+          {% placeholder "structure_block_heading" %}
+        </div>
+        <div class="structure_block_lang">
+          <div class="html_css">{% placeholder "html_css" %}</div>
+          <div class="js_frameworks">{% placeholder "js_frameworks" %}</div>
+          <div class="php_lang">{% placeholder "php_lang" %}</div>
+          <div class="python_frameworks">{% placeholder "python_frameworks" %}</div>
+          <div class="data_base">{% placeholder "data_base" %}</div>
+          <div class="cms_sys">{% placeholder "cms_sys" %}</div>
+        </div>
+      </div>
+      <!--END STRUCTURE LANGUAGE CODE SYSTEMS-->
+      <!--INTRODUCTION PORTFOLIO BLOCK-->
       <div class="intro_block_portfolio">
         <div class="intro_block_portfolio_left">
-          <div class="intro_portfolio_heading_left">
-            {% placeholder "intro_portfolio_heading_1" %}
-          </div>
           <div class="intro_portfolio_image_left">
             {% placeholder "intro_portfolio_image_1" %}
+          </div>
+          <div class="intro_portfolio_heading_left">
+            {% placeholder "intro_portfolio_heading_1" %}
           </div>
           <div class="intro_portfolio_text_left">
             {% placeholder "intro_portfolio_text_1" %}
           </div>
         </div>
         <div class="intro_block_portfolio_right">
-          <div class="intro_portfolio_heading_right">
-            {% placeholder "intro_portfolio_heading_2" %}
-          </div>
           <div class="intro_portfolio_image_right">
             {% placeholder "intro_portfolio_image_2" %}
+          </div>
+          <div class="intro_portfolio_heading_right">
+            {% placeholder "intro_portfolio_heading_2" %}
           </div>
           <div class="intro_portfolio_text_right">
             {% placeholder "intro_portfolio_text_2" %}
           </div>
         </div>
+        <div class="intro_block_portfolio_left">
+          <div class="intro_portfolio_image_left">
+            {% placeholder "intro_portfolio_image_3" %}
+          </div>
+          <div class="intro_portfolio_heading_left">
+            {% placeholder "intro_portfolio_heading_3" %}
+          </div>
+          <div class="intro_portfolio_text_left">
+            {% placeholder "intro_portfolio_text_3" %}
+          </div>
+        </div>
+        <div class="intro_block_portfolio_right">
+          <div class="intro_portfolio_image_right">
+            {% placeholder "intro_portfolio_image_4" %}
+          </div>
+          <div class="intro_portfolio_heading_right">
+            {% placeholder "intro_portfolio_heading_4" %}
+          </div>
+          <div class="intro_portfolio_text_right">
+            {% placeholder "intro_portfolio_text_4" %}
+          </div>
+        </div>
+        <div class="intro_block_portfolio_left">
+          <div class="intro_portfolio_image_left">
+            {% placeholder "intro_portfolio_image_5" %}
+          </div>
+          <div class="intro_portfolio_heading_left">
+            {% placeholder "intro_portfolio_heading_5" %}
+          </div>
+          <div class="intro_portfolio_text_left">
+            {% placeholder "intro_portfolio_text_5" %}
+          </div>
+        </div>
       </div>
+      <!--END INTRODUCTION PORTFOLIO BLOCK-->
     </div>
-   {% placeholder "allcontent" %}
   </div>
   
   {% endblock content %}
