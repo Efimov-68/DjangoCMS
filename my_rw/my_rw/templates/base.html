@@ -22,17 +22,7 @@
         </ul>
       </div>
       <div class="header_block">{% placeholder "header" %}</div>
-      <div class="sld_img">
-        <div class="sld_block">
-         <div class="sld_text">
-           {% placeholder "sld_text" %}
-         </div>
-          <form method="get" >
-            <input type="submit" values="Отправить"/>
-            <input type="submit" values="Отправить"/>
-          </form>
-        </div>
-      </div>
+      {% block header %}{% endblock header %}
       <div class="nav">
         <ul>
           {% show_menu 0 100 100 100 %}

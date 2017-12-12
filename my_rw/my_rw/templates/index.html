@@ -8,10 +8,63 @@
 
 <body>
   {% cms_toolbar %}
-  
+  <header>
+   {% block header %}
+    <div class="sld_img">
+        <div class="sld_block">
+         <div class="sld_text">
+           {% placeholder "sld_text" %}
+         </div>
+          <form method="get" >
+            <input type="submit" values="Отправить"/>
+            <input type="submit" values="Отправить"/>
+          </form>
+        </div>
+      </div>
+  </header>
+  {% endblock header %}
   {% block content %}
   
   <div id="allcontent">
+    <div class="introduction">
+      <div class="intro_block_about">
+        <div class="intro_about_heading">
+          {% placeholder "intro_about_heading" %}
+        </div>
+        <div class="intro_about_image">
+          {% placeholder "intro_image" %}
+        </div>
+        <div class="intro_about_block_text">
+          <div class="intro_about_text">
+            {% placeholder "intro_text" %}
+          </div>
+        </div>
+      </div>
+      <div class="intro_block_portfolio">
+        <div class="intro_block_portfolio_left">
+          <div class="intro_portfolio_heading_left">
+            {% placeholder "intro_portfolio_heading_1" %}
+          </div>
+          <div class="intro_portfolio_image_left">
+            {% placeholder "intro_portfolio_image_1" %}
+          </div>
+          <div class="intro_portfolio_text_left">
+            {% placeholder "intro_portfolio_text_1" %}
+          </div>
+        </div>
+        <div class="intro_block_portfolio_right">
+          <div class="intro_portfolio_heading_right">
+            {% placeholder "intro_portfolio_heading_2" %}
+          </div>
+          <div class="intro_portfolio_image_right">
+            {% placeholder "intro_portfolio_image_2" %}
+          </div>
+          <div class="intro_portfolio_text_right">
+            {% placeholder "intro_portfolio_text_2" %}
+          </div>
+        </div>
+      </div>
+    </div>
    {% placeholder "allcontent" %}
   </div>
   
