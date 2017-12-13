@@ -166,9 +166,12 @@ header {
 .structure_block_heading h1 {
   text-align: center;
 }
+.structure_block_lang {
+  margin: 50px auto 50px 20px;
+}
 .structure_lang_image img {
-  width: 20px;
   height: 50px;
+  padding-right: 10px;
 }
 /*END INTRODUCTION STRUCTURE LANGUAGE BLOCK*/
 
