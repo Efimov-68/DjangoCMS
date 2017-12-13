@@ -164,18 +164,24 @@ header {
   margin: 100px auto;
 }
 .structure_block_heading h1 {
+  margin-top: 200px;
   text-align: center;
 }
 .structure_block_lang {
   margin: 50px auto 50px 20px;
 }
 .structure_lang_image img {
+  margin-top: 50px;
   height: 50px;
   padding-right: 10px;
 }
 /*END INTRODUCTION STRUCTURE LANGUAGE BLOCK*/
 
 /*INTRODUCTION PORTFOLIO BLOCK*/
+.intro_block_portfolio_heading h1 {
+  margin-top: 200px;
+  text-align: center;
+}
 /*PORTFOLIO LEFT*/
 .intro_block_portfolio_left {
   height: 450px;
