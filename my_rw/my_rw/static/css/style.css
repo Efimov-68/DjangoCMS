@@ -166,6 +166,10 @@ header {
 .structure_block_heading h1 {
   text-align: center;
 }
+.structure_lang_image img {
+  width: 20px;
+  height: 50px;
+}
 /*END INTRODUCTION STRUCTURE LANGUAGE BLOCK*/
 
 /*INTRODUCTION PORTFOLIO BLOCK*/
@@ -217,8 +221,11 @@ header {
   border-radius: 5px;
   background-color: ghostwhite;
 }
-
 /*END INTRODUCTION PORTFOLIO BLOCK*/
+/****/
+/*INTRODUCTION REVIEWS BLOCK*/
+
+/*END INTRODUCTION REVIEWS BLOCK*/
 
 footer {
   border: 2px solid black;
