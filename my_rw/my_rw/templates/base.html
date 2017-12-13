@@ -7,9 +7,8 @@
   <meta name="text/html; charset=UTF-8" http-equiv="Content-Type" />
   <title>{% block title %}This is my new project home page{% endblock title %}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css"/>
-  {% render_block "css" %}
+
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" /> {% render_block "css" %}
 </head>
 
 <body>
@@ -33,18 +32,28 @@
   <div class="container">
     {% block content %}{% endblock content %}
   </div>
-    <footer>
-      <div class="footer_heading">
-        <h3>{% placeholder "footer_heading" %}</h3>
+  <footer>
+    <div class="footer_block">
+      <div class="nav_social">
+        <div class="social_heading">
+          {% placeholder "social_heading" %}
+        </div>
+        <div class="footer_social_contacts">
+          <ul>
+            <li><img src="{{STATIC_URL}}img/social/fb.png" alt="Fb" />{% placeholder "footer_fb_contacts"%}</li>
+            <li><img src="{{STATIC_URL}}img/social/vk.png" alt="Fb" />{% placeholder "footer_vk_contacts"%}</li>
+            <li><img src="{{STATIC_URL}}img/social/insta.png" alt="Fb" />{% placeholder "footer_insta_contacts"%}</li>
+            <li><img src="{{STATIC_URL}}img/social/skype.png" alt="Fb" />{% placeholder "footer_skype_contacts"%}</li>
+            <li><img src="{{STATIC_URL}}img/social/Telegram.png" alt="Fb" />{% placeholder "footer_telegram_contacts"%}</li>
+            <li>{% placeholder "tel" %}</li>
+            <li><a href="">{% placeholder "email_rw" %}</a></li>
+            <li><a href="">{% placeholder "email_rws" %}</a></li>
+            <li>{% placeholder "footer_heading" %}</li>
+          </ul>
+        </div>
       </div>
-      <div class="nav_info">
-        <ul>
-          <li>{% placeholder "tel" %}</li>
-          <li><a href="">{% placeholder "email_rw" %}</a></li>
-          <li><a href="">{% placeholder "email_rws" %}</a></li>
-        </ul>
-      </div>
-    </footer>
+    </div>
+  </footer>
   <script></script>
   {% render_block "js" %}
 </body>
