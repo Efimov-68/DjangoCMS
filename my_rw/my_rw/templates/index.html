@@ -9,22 +9,21 @@
 <body>
   {% cms_toolbar %}
   <header>
-   {% block header %}
+    {% block header %}
     <div class="sld_img">
-        <div class="sld_block">
-         <div class="sld_text">
-           {% placeholder "sld_text" %}
-         </div>
-          <form method="get" action="">
-            <input type="submit" values="Отправить"/>
-            <input type="submit" values="Отправить"/>
-          </form>
+      <div class="sld_block">
+        <div class="sld_text">
+          {% placeholder "sld_text" %}
         </div>
+        <form method="get" action="">
+          <input type="submit" values="Отправить" />
+          <input type="submit" values="Отправить" />
+        </form>
       </div>
+    </div>
   </header>
-  {% endblock header %}
-  {% block content %}
-  
+  {% endblock header %} {% block content %}
+
   <div id="allcontent">
     <div class="introduction">
       <!--INTRODUCTION ABOUT US BLOCK-->
@@ -49,12 +48,6 @@
         </div>
         <div class="structure_block_lang">
           <div class="structure_lang_image">{% placeholder "html5" %}</div>
-          <!--div class="css3">{% placeholder "css3" %}</div>
-          <div class="js_frameworks">{% placeholder "js_frameworks" %}</div>
-          <div class="php_lang">{% placeholder "php_lang" %}</div>
-          <div class="python_frameworks">{% placeholder "python_frameworks" %}</div>
-          <div class="data_base">{% placeholder "data_base" %}</div>
-          <div class="cms_sys">{% placeholder "cms_sys" %}</div-->
         </div>
       </div>
       <!--END STRUCTURE LANGUAGE CODE SYSTEMS-->
@@ -126,83 +119,85 @@
           <div class="intro_reviews_block_heading">
             {% placeholder "intro_reviews_block_heading" %}
           </div>
-          <!--REVIEWS_1-->
-          <div class="intro_reviews_1">
-            <div class="intro_reviews_heading_1">
-              {% placeholder "intro_reviews_heading_1" %}
+          <div class="intro_reviws_middle_block">
+            <!--REVIEWS_1-->
+            <div class="intro_reviews_1">
+              <div class="intro_reviews_heading_1">
+                {% placeholder "intro_reviews_heading_1" %}
+              </div>
+              <div class="intro_reviews_image_1">
+                {%placeholder "intro_reviews_image_1" %}
+              </div>
+              <div class="intro_reviews_text_1">
+                {% placeholder "intro_reviews_text_1" %}
+              </div>
             </div>
-            <div class="intro_reviews_image_1">
-              {%placeholder "intro_reviews_image_1" %}
+            <!--REVIEWS_2-->
+            <div class="intro_reviews_2">
+              <div class="intro_reviews_heading_2">
+                {% placeholder "intro_reviews_heading_2" %}
+              </div>
+              <div class="intro_reviews_image_2">
+                {%placeholder "intro_reviews_image_2" %}
+              </div>
+              <div class="intro_reviews_text_2">
+                {% placeholder "intro_reviews_text_2" %}
+              </div>
             </div>
-            <div class="intro_reviews_text_1">
-              {% placeholder "intro_reviews_text_1" %}
+            <!--REVIEWS_3-->
+            <div class="intro_reviews_3">
+              <div class="intro_reviews_heading_3">
+                {% placeholder "intro_reviews_heading_3" %}
+              </div>
+              <div class="intro_reviews_image_3">
+                {%placeholder "intro_reviews_image_3" %}
+              </div>
+              <div class="intro_reviews_text_3">
+                {% placeholder "intro_reviews_text_3" %}
+              </div>
             </div>
-          </div>
-          <!--REVIEWS_2-->
-          <div class="intro_reviews_2">
-            <div class="intro_reviews_heading_2">
-              {% placeholder "intro_reviews_heading_2" %}
+            <!--REVIEWS_4-->
+            <div class="intro_reviews_4">
+              <div class="intro_reviews_heading_4">
+                {% placeholder "intro_reviews_heading_4" %}
+              </div>
+              <div class="intro_reviews_image_4">
+                {%placeholder "intro_reviews_image_4" %}
+              </div>
+              <div class="intro_reviews_text_4">
+                {% placeholder "intro_reviews_text_4" %}
+              </div>
             </div>
-            <div class="intro_reviews_image_2">
-              {%placeholder "intro_reviews_image_2" %}
+            <!--REVIEWS_5-->
+            <div class="intro_reviews_5">
+              <div class="intro_reviews_heading_5">
+                {% placeholder "intro_reviews_heading_5" %}
+              </div>
+              <div class="intro_reviews_image_5">
+                {%placeholder "intro_reviews_image_5" %}
+              </div>
+              <div class="intro_reviews_text_5">
+                {% placeholder "intro_reviews_text_5" %}
+              </div>
             </div>
-            <div class="intro_reviews_text_2">
-              {% placeholder "intro_reviews_text_2" %}
-            </div>
-          </div>
-          <!--REVIEWS_3-->
-          <div class="intro_reviews_3">
-            <div class="intro_reviews_heading_3">
-              {% placeholder "intro_reviews_heading_3" %}
-            </div>
-            <div class="intro_reviews_image_3">
-              {%placeholder "intro_reviews_image_3" %}
-            </div>
-            <div class="intro_reviews_text_3">
-              {% placeholder "intro_reviews_text_3" %}
-            </div>
-          </div>
-          <!--REVIEWS_4-->
-          <div class="intro_reviews_4">
-            <div class="intro_reviews_heading_4">
-              {% placeholder "intro_reviews_heading_4" %}
-            </div>
-            <div class="intro_reviews_image_4">
-              {%placeholder "intro_reviews_image_4" %}
-            </div>
-            <div class="intro_reviews_text_4">
-              {% placeholder "intro_reviews_text_4" %}
-            </div>
-          </div>
-          <!--REVIEWS_5-->
-          <div class="intro_reviews_5">
-            <div class="intro_reviews_heading_5">
-              {% placeholder "intro_reviews_heading_5" %}
-            </div>
-            <div class="intro_reviews_image_5">
-              {%placeholder "intro_reviews_image_5" %}
-            </div>
-            <div class="intro_reviews_text_5">
-              {% placeholder "intro_reviews_text_5" %}
-            </div>
-          </div>
-          <!--REVIEWS_6-->
-          <div class="intro_reviews_6">
-            <div class="intro_reviews_heading_6">
-              {% placeholder "intro_reviews_heading_6" %}
-            </div>
-            <div class="intro_reviews_image_6">
-              {%placeholder "intro_reviews_image_6" %}
-            </div>
-            <div class="intro_reviews_text_6">
-              {% placeholder "intro_reviews_text_6" %}
+            <!--REVIEWS_6-->
+            <div class="intro_reviews_6">
+              <div class="intro_reviews_heading_6">
+                {% placeholder "intro_reviews_heading_6" %}
+              </div>
+              <div class="intro_reviews_image_6">
+                {%placeholder "intro_reviews_image_6" %}
+              </div>
+              <div class="intro_reviews_text_6">
+                {% placeholder "intro_reviews_text_6" %}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   {% endblock content %}
 
 </body>

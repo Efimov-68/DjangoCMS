@@ -130,6 +130,7 @@ header {}
 }
 
 #allcontent {
+  margin-top: 100px;
   padding: 20px;
   border: none;
 }
@@ -164,9 +165,12 @@ header {}
 .structure_block_lang {
   margin: 50px auto 50px 20px;
 }
+.structure_lang_image {
+  margin: 0 auto;
+}
 .structure_lang_image img {
   margin-top: 50px;
-  height: 50px;
+  height: 80px;
   padding-right: 10px;
 }
 /*END INTRODUCTION STRUCTURE LANGUAGE BLOCK*/
@@ -231,14 +235,14 @@ header {}
 .intro_reviews {
   height: 1200px;
   margin-top: 100px;
-  padding: 20px;
+  padding: 0;
   background-color: ghostwhite;
 }
 
 .intro_reviews_block {
   height: 1200px;
   margin: 0 auto;
-  padding-left: 9%;
+  padding: 0;
   padding-right: auto;
 }
 
@@ -249,6 +253,9 @@ header {}
   padding-top: 50px;
 }
 
+.intro_reviws_middle_block {
+  padding-left: 10%;
+}
 .intro_reviews_1,
 .intro_reviews_2,
 .intro_reviews_3,
