@@ -402,9 +402,6 @@ footer {
   width: 10px;
   margin: 0;
   padding: 10px;
-  border: 1px solid black;
-  background-color: red;
-  box-shadow: 0 0 2px orange;
   outline: 0;
 }
 /*END FOOTER FORM REGISTRATION*/
