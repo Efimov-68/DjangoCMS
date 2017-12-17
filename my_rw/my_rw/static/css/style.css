@@ -128,16 +128,17 @@ header {}
   color: white;
   background-color: darkred;
 }
-
+/*ALLCONTENT*/
 #allcontent {
   margin-top: 100px;
   padding: 20px;
   border: none;
 }
+/*INTRODUCTION BLOCK ABOUT US*/
 .intro_block_about {
   padding: 20px;
-  border-top: 0px ridge grey;
-  border-bottom: 0px ridge grey;
+  border-top: none;
+  border-bottom: none;
   background-color: ghostwhite;
 }
 .intro_about_heading {
@@ -154,6 +155,7 @@ header {}
   border-radius: 3px;
   box-shadow: 2px 1px 1px black;
 }
+/*END INTRODUCTION BLOCK ABOUT US*/
 /*INTRODUCTION STRUCTURE LANGUAGE BLOCK*/
 .structure_block {
   width: auto;
@@ -184,10 +186,10 @@ header {}
 }
 /*PORTFOLIO LEFT*/
 .intro_block_portfolio_left {
-  height: 450px;
+  height: 460px;
   padding: 20px;
-  border-top: 1px ridge grey;
-  border-bottom: 1px ridge grey;
+  border-top: none;
+  border-bottom: none;
   background-color: ghostwhite;
 }
 .intro_portfolio_image_left {
@@ -207,7 +209,7 @@ header {}
 }
 /*PORTFOLIO RIGHT*/
 .intro_block_portfolio_right {
-  height: 450px;
+  height: 460px;
   padding: 20px;
   background-color: whitesmoke;
 }
