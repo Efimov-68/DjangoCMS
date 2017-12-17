@@ -46,8 +46,8 @@
             <li><img src="{{STATIC_URL}}img/social/skype.png" alt="Fb" />{% placeholder "footer_skype_contacts"%}</li>
             <li><img src="{{STATIC_URL}}img/social/Telegram.png" alt="Fb" />{% placeholder "footer_telegram_contacts"%}</li>
             <li>{% placeholder "tel" %}</li>
-            <li><a href="">{% placeholder "email_rw" %}</a></li>
-            <li><a href="">{% placeholder "email_rws" %}</a></li>
+            <li>Разработка: <a href="">{% placeholder "email_rw" %}</a></li>
+            <li>Курсы обучения: <a href="">{% placeholder "email_rws" %}</a></li>
             <li>{% placeholder "footer_heading" %}</li>
           </ul>
         </div>
@@ -55,17 +55,19 @@
     </div>
     <div class="footer_form_registration">
       <div class="form_registration">
+        <div class="form_heading">
+            {% placeholder "form_heading" %}
+        </div>
         <form method="get" action="">
-          <input type="name" name="first_name" placeholder="Имя" required/>
-          <input type="email" placeholder="E-mail" required/>
+          <input type="name" name="first_name" placeholder="Имя" required />
+          <input type="tel" placeholder="Телефон" required />
           <input type="submit" value="Отправить" />
-          {% placeholder "personal_data" %}
+          <div class="checkbox"><input type="checkbox" id="check" required /><label for="check"> Согласие с предоставлением персональных данных и их обработка</label></div>
         </form>
       </div>
     </div>
   </footer>
   <script></script>
-  {% render_block "js" %}
-</body>
+  {% render_block "js" %}</body>
 
 </html>

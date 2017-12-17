@@ -119,10 +119,14 @@ header {}
   height: 35px;
   font-size: .95em;
   border: 2px solid darkred;
-  border-radius: 20px;
+  border-radius: 15px;
   color: darkred;
   background-color: rgba(255,255,255,0);
   cursor: pointer;
+}
+.sld_block input:nth-child(1){
+  height:40px;
+  font-size:20px;
 }
 .sld_block input:hover {
   color: white;
@@ -315,6 +319,19 @@ header {}
 }
 /*END INTRODUCTION REVIEWS BLOCK*/
 
+/*INTRODUCTION PARTNERS*/
+.introduction_partners {}
+.intro_partners_block{}
+.intro_partners_heading{}
+.intro_partners_structure{
+  margin-left: auto;
+  margin-right:auto;
+  padding-top:40px;
+  padding-left:auto;
+  padding-right:auto;
+}
+/*END INTRODUCTION PARTNERS*/
+
 /*FOOTER*/
 footer {
   height: 450px;
@@ -329,9 +346,13 @@ footer {
   .footer_block {
     width: auto;
   }
+  .nav_social {
+    float: left;
+    margin-left:20px;
+  }
 }
 .nav_social {
-  float: right;
+  float: left;
 }
 .footer_social_contacts ul li {
   list-style-type: none;
@@ -359,53 +380,87 @@ footer {
 /*FOOTER FORM REGISTRATION*/
 .footer_form_registration {
   width:auto;
-  max-width: 600px;
+  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
+}
+.form_heading h1 {
+  margin-top:50px;
+  padding-top:70px;
+  padding-bottom:30px;
+  text-align:center;
 }
 .form_registration form {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
 }
-.form_registration input {
-  border: none;
-  height: 30px;
-  padding-left: 10px;
-}
 .form_registration input:nth-child(1) {
   margin-left: 20px;
 }
-.form_registration input:nth-child(1),
-.form_registration input:nth-child(2) {
+.form_registration form  input:nth-child(1),
+.form_registration form input:nth-child(2) {
   width: 200px;
-  margin-right: 0px;
-}
-.form_registration input:nth-child(3){
-  border: 2px solid darkred;
-  border-radius: 5px;
-  background-color: lightgray;
-}
-.form_registration input:nth-child(3):hover{
-  background-color: ghostwhite;
-  border: 2px solid orange;
-}
-.form_registration input:nth-child(3):focus {
-  background-color: orange;
+  margin-right: 5px;
+  border-radius:3px;
   border: none;
-  outline: 0;
+  height: 40px;
+  padding-left: 10px;
+  font-size:15px;
+  box-shadow:0 0 1px white;
+  -moz-transform:scale(1.01);
+  -webkit-transform:scale(1.01);
 }
-.personal_data {
-  text-align: center;
-  font-size: .8em;
+.form_registration form input:nth-child(3){
+  height:35px;
+  width:120px;
+  margin-left:10px;
+  font-size:17px;
+  color:white;
+  border:none;
+  border-radius: 30px;
+  background-color: blue;
+  box-shadow:0 3px 5px blue;
 }
-.personal_data input {
-  height: 20px;
-  width: 10px;
-  margin: 0;
-  padding: 10px;
+.form_registration form input:nth-child(3):hover{
+  background-color: orange;
+  box-shadow:0 3px 5px orange;
+}
+.form_registration form input:nth-child(3):focus {
+  font-size:17px;
+  background-color: orange;
+  box-shadow:none;
   outline: 0;
 }
 /*END FOOTER FORM REGISTRATION*/
-
+.checkbox {
+  position:relative;
+  padding: 20px 50px 0 70px;
+  font-size: 0.8em;
+  font-family:cursive, italic;
+}
+.checkbox input[type=checkbox] {
+  display:none;
+}
+.checkbox label:after {
+  content:'';
+  display:block;
+  height:15px;
+  width:15px;
+  outline:1px solid #939598;
+  position:absolute;
+  top:20px;
+  left:40px;
+  background-color:white;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+  outline:1px solid #939598;
+  border:2px solid ghostwhite;
+  border-radius:0px;
+  width:11px;
+  height:11px;
+  background-color:#63849F;
+}
+/***end CHECKBOX_PERSONAL***
+****end CHECKBOX***/
 /*END FOOTER*/
