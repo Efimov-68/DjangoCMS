@@ -119,7 +119,7 @@ header {}
   height: 35px;
   font-size: .95em;
   border: 2px solid darkred;
-  border-radius: 15px;
+  border-radius: 20px;
   color: darkred;
   background-color: rgba(255,255,255,0);
   cursor: pointer;
@@ -162,22 +162,25 @@ header {}
 /*INTRODUCTION STRUCTURE LANGUAGE BLOCK*/
 .structure_block {
   width: auto;
-  max-width: 600px;
+  max-width: 700px;
   margin: 100px auto;
 }
 .structure_block_heading h1 {
   margin-top: 200px;
   text-align: center;
 }
+.structure_block_lang h2{
+  margin-top: 70px;
+  text-align: center;
+}
 .structure_block_lang {
-  margin: 50px auto 50px 20px;
+  margin: 30px auto 50px 20px;
 }
 .structure_lang_image {
   margin: 0 auto;
 }
 .structure_lang_image img {
   margin-top: 50px;
-  height: 80px;
   padding-right: 10px;
 }
 /*END INTRODUCTION STRUCTURE LANGUAGE BLOCK*/
@@ -320,11 +323,16 @@ header {}
 .intro_partners_block{}
 .intro_partners_heading{}
 .intro_partners_structure{
+  width: auto;
+  max-width:1000px;
   margin-left: auto;
   margin-right:auto;
   padding-top:40px;
   padding-left:auto;
   padding-right:auto;
+}
+.intro_partners_structure img {
+  padding: 5px;
 }
 /*END INTRODUCTION PARTNERS*/
 
@@ -433,7 +441,7 @@ footer {
   position:relative;
   padding: 20px 50px 0 70px;
   font-size: 0.8em;
-  font-family:cursive, italic;
+  font-family:cursive;
 }
 .checkbox input[type=checkbox] {
   display:none;
@@ -458,4 +466,24 @@ footer {
 }
 /***end CHECKBOX_PERSONAL***
 ****end CHECKBOX***/
+/*FOOTER DOCUMENT*/
+.footer_documents{
+  float: right;
+}
+.footer_documents_block ul{
+  margin:0 auto;
+  padding-right: 20px;
+  list-style-type: none;
+}
+.footer_documents_block li{
+  width: 200px;
+  padding-top: 10px;
+}
+.footer_documents_block a{
+  color: gray;
+}
+.footer_documents_block a:hover{
+  text-decoration: none;
+}
+/*END FOOTER DOCUMENT*/
 /*END FOOTER*/
