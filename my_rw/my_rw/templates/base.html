@@ -17,10 +17,10 @@
     <header>
       <div class="nav_header_tel">
         <ul>
-          <li>{% placeholder "tel" %}</li>
+          <li><h3>+7(499)394-6887</h3></li>
         </ul>
       </div>
-      <div class="header_block">{% placeholder "header" %}</div>
+      <div class="header_block"><h1>Rabbit<span>Web</span>.ru</h1></div>
       {% block header %}{% endblock header %}
       <div class="nav">
         <ul>
@@ -32,33 +32,51 @@
   <div class="container">
     {% block content %}{% endblock content %}
   </div>
+  {% block footer %}
   <footer>
     <div class="footer_block">
       <div class="nav_social">
         <div class="social_heading">
-          {% placeholder "social_heading" %}
+          <h4>Способы связи:</h4>
         </div>
         <div class="footer_social_contacts">
           <ul>
-            <li><img src="{{STATIC_URL}}img/social/fb.png" alt="Fb" />{% placeholder "footer_fb_contacts"%}</li>
-            <li><img src="{{STATIC_URL}}img/social/vk.png" alt="Fb" />{% placeholder "footer_vk_contacts"%}</li>
-            <li><img src="{{STATIC_URL}}img/social/insta.png" alt="Fb" />{% placeholder "footer_insta_contacts"%}</li>
-            <li><img src="{{STATIC_URL}}img/social/skype.png" alt="Fb" />{% placeholder "footer_skype_contacts"%}</li>
-            <li><img src="{{STATIC_URL}}img/social/Telegram.png" alt="Fb" />{% placeholder "footer_telegram_contacts"%}</li>
-            <li>{% placeholder "tel" %}</li>
-            <li>Разработка: <a href="">{% placeholder "email_rw" %}</a></li>
-            <li>Курсы обучения: <a href="">{% placeholder "email_rws" %}</a></li>
-            <li>{% placeholder "footer_heading" %}</li>
+            <li>
+              <img src="{{STATIC_URL}}img/social/fb.png" alt="Fb" />
+              <span>RabbitWeb</span>
+            </li>
+            <li>
+              <img src="{{STATIC_URL}}img/social/vk.png" alt="Fb" />
+              <span>RabbitWeb</span>
+            </li>
+            <li>
+              <img src="{{STATIC_URL}}img/social/insta.png" alt="Fb" />
+              <span>@rabbitweb</span>
+            </li>
+            <li>
+              <img src="{{STATIC_URL}}img/social/skype.png" alt="Fb" />
+              <span>RabbitWeb</span>
+            </li>
+            <li>
+              <img src="{{STATIC_URL}}img/social/Telegram.png" alt="Fb" />
+              <span>@rabitweb</span>
+            </li>
+            <li><h3>+7(499)394-6887</h3></li>
+            <li>Разработка: <a href="">office@rabbitweb.ru</a></li>
+            <li>Курсы обучения: <a href="">office@rwschool.net</a></li>
+            <li><h3>Rabbit<span>Web</span>.ru</h3></li>
           </ul>
         </div>
       </div>
       <div class="footer_documents">
         <div class="documents_heading">
-          {% placeholder "documents_heading" %}
+          <h4>Доп. информация:</h4>
         </div>
         <div class="footer_documents_block">
           <ul>
-            {% placeholder "footer_documents" %}
+            <li><a href="">Оплата заказа</a></li>
+            <li><a href="">Бриф заказа</a></li>
+            <li><a href="">Соглашение о предоставлении персональных данных</a></li>
           </ul>
         </div>
       </div>
@@ -66,7 +84,7 @@
     <div class="footer_form_registration">
       <div class="form_registration">
         <div class="form_heading">
-            {% placeholder "form_heading" %}
+          <h1>Форма регистрации</h1>
         </div>
         <form method="get" action="">
           <input type="name" name="first_name" placeholder="Имя" required />
@@ -77,6 +95,7 @@
       </div>
     </div>
   </footer>
+  {% endblock footer %}
   <script></script>
   {% render_block "js" %}
 </body>

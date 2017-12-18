@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% load cms_tags %}
+<!doctype html>
+<html>
+<head>
+	<title>{% block title %}{% page_attribute "page_title" %}{% endblock title %}</title>
+<body>
+	{% cms_toolbar %}
+	{% block header %}{% endblock header %}
+
+	{% block content %}
+
+	{% endblock content %}
+
+</body>
+</html>
