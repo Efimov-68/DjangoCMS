@@ -2,28 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Home page</title>
-    <!--style>
-      .blog-button a:nth-child(1) {
+    <title>Page02</title>
+    <link rel="stylesheet" type="text/css" href="new_style.css"/>
+    <style>
+      .blog-button a:nth-child(2) {
         color:gray;
         border: 1px solid lightgray;
         box-shadow: none;
         cursor:inherit;
       }
-    </style-->
+    </style>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="new_script.js"></script>
   </head>
   <body>
-    {% cms_toolbar %}
-
-    {% block header %}{% endblock "header" %}
+    <header>
+      <div id="header_contents">
+        <div class="logo">
+          <h1 class="logo-darkcyan">Rabbit<span class="logo-darkorange">Web</span>.ru // R<span class="logo-darkorange">WSchool</span>.net</h1>
+        </div>
+        <div class="content-select">
+          <input type="button" value="С чего начать?"/>
+          <input type="button" value="Начинающим"/>
+          <input type="button" value="Специалистам"/>
+          <input type="button" value="для Детей"/>
+          <input type="button" value="Scratch"/>
+          <input type="button" value="Python"/>
+          <input type="button" value="Django"/>
+          <input type="button" value="JavaScript"/>
+          <input type="button" value="jQuery"/>
+          <input type="button" value="Ajax"/>
+          <input type="button" value="HTML"/>
+          <input type="button" value="CSS"/>
+          <input type="button" value="PHP"/>
+        </div>
+      </div>
+    </header>
     <div class="button-back">
       <input type="button" value="Вверх"/>
     </div>
     <div class="right-block-contents">
       <div class="right-block-faq">
         <div>
-          <h2>{%placeholder "right-block-faq-h2"%}</h2>
-          <p>{%placeholder "right-block-faq-text"%} <a href="">Подробнее...</a></p>
+          <h2>Python 3.6</h2>
+          <p>В Python 3.6 появилась такая интересная особенность, как синтаксис для аннотаций переменных. Подробнее про это нововведение можно прочитать в PEP 526. Суть этого PEP заключается в том, чтобы перевести идею аннотаций типов (PEP 484) на её следующую логическую ступень, т.е. сделать возможным указание типов переменных, включая поля классов и объектов. <a href="">Подробнее...</a></p>
         </div>
         <div>
           <h2>Python 3.6</h2>
@@ -112,16 +135,16 @@
     </div>
     <div id="all_contents">
       <div class="all_contents_heading">
-        <h1>Python 3.6</h1>
+        <h1>Страница_02</h1>
       </div>
-      <div class="content-quick-blog-text">
+      <!--div class="content-quick-blog-text">
         <ul>
           <li>В Python 3.6 появилась такая интересная особенность, как синтаксис для аннотаций переменных. <a href="">Подробнее</a> про это нововведение можно прочитать в PEP 526.</li>
           <li>В Python 3.6 появилась такая интересная особенность, как синтаксис для аннотаций переменных. <a href="">Подробнее</a> про это нововведение можно прочитать в PEP 526.</li>
           <li>В Python 3.6 появилась такая интересная особенность, как синтаксис для аннотаций переменных. <a href="">Подробнее</a> про это нововведение можно прочитать в PEP 526.</li>
           <li>В Python 3.6 появилась такая интересная особенность, как синтаксис для аннотаций переменных. <a href="">Подробнее</a> про это нововведение можно прочитать в PEP 526.</li>
         </ul>
-      </div>
+      </div-->
       <div class="content-blog">
         <div>
           <img src="fon_img.jpg">
@@ -186,8 +209,8 @@
       </div>
       <div class="blog-button">
         <div>
-          <a>1</a>
-          <a href="page02.html">2</a>
+          <a href="new_index.html">1</a>
+          <a>2</a>
           <a href="page03.html">3</a>
            ...
           <a href="page11.html">11</a>
@@ -218,6 +241,5 @@
         </div>
       </div>
     </footer>
-    {% render_block "js" %}
   </body>
 </html>

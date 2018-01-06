@@ -1,0 +1,51 @@
+{% load cms_tags menu_tags sekizai_tags %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="text-html; charset=UTF-8" http-equiv="Content-Type"/>
+        <title>{% block title %}RabbitWeb.ru home page{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic.css"/>
+        {% render_block "css" %}
+    </head>
+    <body>
+        {% cms_toolbar %}
+
+        {% block header %}
+        <header>
+            <div class="header_heading">
+                <h1><a href="">Rabbit<span>Web</span></a></h1>
+            </div>
+            <div class="nav_menu">
+                <div class="top_menu">
+                    <ul class="nav">
+                        {% show_menu 0 100 100 100 %}
+                    </ul>
+                </div>
+                <div class="nav_info_serv">
+                    <ul>
+                        <li>+7(499)394-6887</li>
+                        <li>Вам требуется разработка сайта <span><a href="">office@rabbitweb.ru</a></span></li>
+                        <li>Вопросы о процессе обучения <span><a href="">office@rwschool.net</a></span></li>
+                        <li>
+                            <a href=""><img src="{{STATIC_URL}}img/social/skype.png" alt="scl"></a>
+                            <a href=""><img src="{{STATIC_URL}}img/social/Telegram.png" alt="scl"></a>
+                            <a href=""><img src="{{STATIC_URL}}img/social/whatsapp.png" alt="scl"></a>
+                            <a href=""><img src="{{STATIC_URL}}img/social/Viber.png" alt="scl"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        {% endblock header %}
+
+        <div class="container">
+            {% block content %}{% endblock content %}
+        </div>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>
+        {% render_block "js" %}
+    </body>
+</html>

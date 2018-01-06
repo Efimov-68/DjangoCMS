@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+	<div class="intro_content">
+		{% placeholder "heading" %}
+		<div class="newblogs">
+			<a href="{{ STATIC_URL }}pages/">
+				<div class="new_heading">
+					<h2>{%placeholder "new_heading"%}</h2>
+				</div>
+				<div class="newblogs_text">{% placeholder "newblogs_text" %}</div>
+			</a>
+		</div>
+		<div class="content_i">
+			{% placeholder "content" %}
+		</div>
+		<div class="newblogs">
+			<a href="{{ STATIC_URL }}pages/">
+				<div class="new_heading">
+					<h2>{%placeholder "new_heading"%}</h2>
+				</div>
+				<div class="newblogs_text">{% placeholder "newblogs_text" %}</div>
+			</a>
+		</div>
+		<div class="content_i">
+			{% placeholder "content" %}
+		</div>
+		<div class="newblogs">
+			<a href="{{ STATIC_URL }}pages/">
+				<div class="new_heading">
+					<h2>{%placeholder "new_heading"%}</h2>
+				</div>
+				<div class="newblogs_text">{% placeholder "newblogs_text" %}</div>
+			</a>
+		</div>
+		<div class="content_i">
+			{% placeholder "content" %}
+		</div>
+	</div>
+	<div class="block_right">
+		<div class="news_site_heading">
+			<h2 align="center">{% placeholder "news_site_heading" %}</h2>
+		</div>
+		<div class="news">
+			<h3>{%placeholder "news_head_1"%}</h3>
+			<p>{%placeholder "news_1"%}</p>
+		</div>
+		<div class="news">
+			<h3>{%placeholder "news_head_2"%}</h3>
+			<p>{%placeholder "news_2"%}</p>
+		</div>
+		<div class="news">
+			<h3>{%placeholder "news_head_3"%}</h3>
+			<p>{%placeholder "news_3"%}</p>
+		</div>
+		<div class="news">
+			<h3>{%placeholder "news_head_4"%}</h3>
+			<p>{%placeholder "news_4"%}</p>
+		</div>
+		<!--div class="news">
+			<h3>{%placeholder "news_head_5"%}</h3>
+			<p>{%placeholder "news_5"%}</p>
+		</div-->
+	</div>
+{% endblock content %}
