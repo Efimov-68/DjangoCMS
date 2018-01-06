@@ -1,41 +1,46 @@
 {% load cms_tags menu_tags sekizai_tags %}
 <!doctype html>
 <html>
-    <head>
-        <title>{% block title %}This is my new project home page{% endblock title %}</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <style type="text/css">
-            .nav {
-                padding-left: 0;
-            }
-            .nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
-        </style>
-        {% render_block "css" %}
-    </head>
-    <body>
-        {% cms_toolbar %}
-        <div class="container">
-            <ul class="nav">
-                {% show_menu 0 100 100 100 %}
-            </ul>
-            {% block content %}{% endblock content %}
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>{% block title %}Base page{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css"/>{% render_block "css" %}
+  </head>
+  <body>
+    {% cms_toolbar %}
+    {% block header %}
+    <header>
+      <div id="header_contents">
+        <div class="logo">
+          <h1 class="logo-darkcyan">Rabbit<span class="logo-darkorange">Web</span>.ru // R<span class="logo-darkorange">WSchool</span>.net</h1>
         </div>
-        {% render_block "js" %}
-    </body>
+        <div class="content-select">
+          <input type="button" value="С чего начать?"/>
+          <input type="button" value="Начинающим"/>
+          <input type="button" value="Специалистам"/>
+          <input type="button" value="для Детей"/>
+          <input type="button" value="Scratch"/>
+          <input type="button" value="Python"/>
+          <input type="button" value="Django"/>
+          <input type="button" value="JavaScript"/>
+          <input type="button" value="jQuery"/>
+          <input type="button" value="Ajax"/>
+          <input type="button" value="HTML"/>
+          <input type="button" value="CSS"/>
+          <input type="button" value="PHP"/>
+        </div>
+      </div>
+    </header>
+    {% endblock header %}
+    {% block content %}
+    
+    {% endblock content %}
+    {% block footer %}{% endblock footer %}
+    <script src="{{STATIC_URL}}js/jquery-3.2.1.min.js"></script>
+    <script src="{{STATIC_URL}}js/jquery-ui.min.js"></script>
+    <script src="{{STATIC_URL}}js/script.js"></script>
+    {% render_block "js" %}
+  </body>
 </html>
