@@ -10,6 +10,7 @@
   </head>
   <body>
     {% cms_toolbar %}
+
     {% block header %}
     <header>
       <div id="header_contents">
@@ -34,13 +35,40 @@
       </div>
     </header>
     {% endblock header %}
-    {% block content %}
-    
-    {% endblock content %}
-    {% block footer %}{% endblock footer %}
+
+    {% block content %}{% endblock content %}
+
+    {% block footer %}
+    <footer>
+      <div class="footer-contents">
+        <div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="">О ПРОЕКТЕ</a></li>
+              <li><a href="">ПОРТФОЛИО</a></li>
+              <li><a href="">ОТЗЫВЫ</a></li>
+              <li><a href="">СОГЛАШЕНИЕ</a></li>
+              <li><a href="">КОНФИДЕНЦИАЛЬНОСТЬ</a></li>
+              <li>
+                <h3 class="logo-darkcyan">+7(499)394-<span class="logo-darkorange">6887</span>
+                <br/>+7(929)956-<span class="logo-darkorange">3812</span></h3>
+              </li>
+              <li>Разработка и Партнёрка: <a href="">office@rabbitweb.ru</a></li>
+              <li>Обучение: <a href="">office@rwschool.net</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo-footer">
+          <h3 class="logo-darkcyan">Rabbit<span class="logo-darkorange">Web</span>.ru // R<span class="logo-darkorange">WSchool</span>.net<sup> &copy;</sup><i> 2017-2018</i></h3>
+        </div>
+      </div>
+    </footer>
+    {% endblock footer %}
+
     <script src="{{STATIC_URL}}js/jquery-3.2.1.min.js"></script>
     <script src="{{STATIC_URL}}js/jquery-ui.min.js"></script>
     <script src="{{STATIC_URL}}js/script.js"></script>
+
     {% render_block "js" %}
   </body>
 </html>

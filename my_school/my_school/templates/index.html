@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+  
     <title>{%block title%}Home page{%endblock title%}</title>
     <style type="text/css">
       .blog-button a:nth-child(1) {
@@ -10,10 +11,12 @@
         cursor:inherit;
       }
     </style>
+
   </head>
   <body>
-    
     {% block header %}{% endblock header %}
+
+    {% block content %}
     <div class="button-back">
       <input type="button" value="Вверх"/>
     </div>
@@ -192,33 +195,8 @@
         </div>
       </div>
     </div>
-    <footer>
-    {%block 'footer'%}
-    <footer>
-      <div class="footer-contents">
-        <div>
-          <div class="footer-list">
-            <ul>
-              <li><a href="">О ПРОЕКТЕ</a></li>
-              <li><a href="">ПОРТФОЛИО</a></li>
-              <li><a href="">ОТЗЫВЫ</a></li>
-              <li><a href="">СОГЛАШЕНИЕ</a></li>
-              <li><a href="">КОНФИДЕНЦИАЛЬНОСТЬ</a></li>
-              <li>
-                <h3 class="logo-darkcyan">+7(499)394-<span class="logo-darkorange">6887</span>
-                <br/>+7(929)956-<span class="logo-darkorange">3812</span></h3>
-              </li>
-              <li>Разработка и Партнёрка: <a href="">office@rabbitweb.ru</a></li>
-              <li>Обучение: <a href="">office@rwschool.net</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="logo-footer">
-          <h3 class="logo-darkcyan">Rabbit<span class="logo-darkorange">Web</span>.ru // R<span class="logo-darkorange">WSchool</span>.net<sup> &copy;</sup><i> 2017-2018</i></h3>
-        </div>
-      </div>
-    </footer>
-    {%endblock 'footer'%}
-    </footer>
+    {% endblock content %}
+
+    {% block footer %}{% endblock footer %}
   </body>
 </html>
